@@ -42,10 +42,13 @@
                   <th>Last Name</th>
                   <th>Email</th>
                   <th>Gender</th>
-                 
+                  <th>city</th>
+                  <th>Contact Number</th>
                 </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                <!-- to load data in data table -->
+              </tbody>
             </table>
           </div>
         </div>
@@ -64,18 +67,16 @@
 </html>
 
 <script>
+  // datatable function will inialise the jquery data table plugin
   $(document).ready(function () {
     var dataTable = $("#customer_data").DataTable({
+      "lengthMenu": [ 5, 15, 25, 35, 45, 50 ],
       processing: true,
-      serverSide: true,
+      serverSide: true, // to enable server side processing
       serverMethod: "get",
       ajax: {
         url: "/get_data",
       },
-      lenghtMenu: [
-        [5, 10, 15, 20, 25, 30],
-        [5, 10, 15, 20, 25, "ALL"],
-      ],
 
       aaSorting: [],
       columns: [
@@ -83,8 +84,9 @@
         { data: "lastName" },
         { data: "email" },
         { data: "gender" },
-        
-      ],
+        { data: "details.city" },
+        { data: "contact", render: "[, ].contact" },
+      ]
     });
   });
 </script>

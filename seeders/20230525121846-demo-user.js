@@ -12,91 +12,91 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    return queryInterface.bulkInsert('users', [{
-      firstName: 'karan',
-      lastName: 'bhatt',
-      email: 'karan@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'happy',
-      lastName: 'shah',
-      email: 'shah@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'hitarth',
-      lastName: 'raval',
-      email: 'raval@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'khushi',
-      lastName: 'rawat',
-      email: 'khushi@example.com',
-      gender:'female',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'khushali',
-      lastName: 'bhojak',
-      email: 'khushali@example.com',
-      gender:'female',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'meet',
-      lastName: 'thakkar',
-      email: 'meet@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'krusha',
-      lastName: 'panchal',
-      email: 'krusha@example.com',
-      gender:'female',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'krunal',
-      lastName: 'kumar',
-      email: 'krunal@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'kajal',
-      lastName: 'jani',
-      email: 'jani@example.com',
-      gender:'female',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'krupali',
-      lastName: 'bhutt',
-      email: 'krupali@example.com',
-      gender:'female',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'taksh',
-      lastName: 'pancholi',
-      email: 'taksh@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },{
-      firstName: 'shiv',
-      lastName: 'patel',
-      email: 'patel@example.com',
-      gender:'male',
-      createdAt: new Date(),
-      updatedAt: new Date()
-    },]);
+    // return queryInterface.bulkInsert('users', [{
+    //   firstName: 'kartik',
+    //   lastName: 'dabhi',
+    //   email: 'kartik@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'heni',
+    //   lastName: 'oza',
+    //   email: 'heni@example.com',
+    //   gender:'female',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'het',
+    //   lastName: 'raval',
+    //   email: 'raval@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'rutvi',
+    //   lastName: 'jani',
+    //   email: 'rutvi@example.com',
+    //   gender:'female',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'khushal',
+    //   lastName: 'bhoda',
+    //   email: 'khushal@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'bhavesh',
+    //   lastName: 'thakkar',
+    //   email: 'thakkar@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'jinal',
+    //   lastName: 'panchal',
+    //   email: 'jinal@example.com',
+    //   gender:'female',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'nita',
+    //   lastName: 'kumari',
+    //   email: 'nita@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'gaurav',
+    //   lastName: 'pathak',
+    //   email: 'pathak@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'vilka',
+    //   lastName: 'jani',
+    //   email: 'vilka@example.com',
+    //   gender:'female',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'maulik',
+    //   lastName: 'patel',
+    //   email: 'maulik@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },{
+    //   firstName: 'pinak',
+    //   lastName: 'patel',
+    //   email: 'patel@example.com',
+    //   gender:'male',
+    //   createdAt: new Date(),
+    //   updatedAt: new Date()
+    // },]);
   },
 
   async down (queryInterface, Sequelize) {

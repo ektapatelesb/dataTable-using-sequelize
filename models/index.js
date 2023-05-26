@@ -40,4 +40,13 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 db.users = require('./users')(sequelize,Sequelize.DataTypes)
+db.details = require("./details")(sequelize, Sequelize);
+db.contact = require("./contact")(sequelize, Sequelize);
+//one-to-one relationship
+db.users.hasOne(db.details, { foreignKey: "userId" });
+db.details.belongsTo(db.users, { foreignKey: "userId" });
+
+db.users.hasMany(db.contact, { foreignKey: "userId" });
+db.contact.belongsTo(db.users, { foreignKey: "userId" });
+
 module.exports = db;
